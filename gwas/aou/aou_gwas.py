@@ -111,7 +111,7 @@ def main():
     parser.add_argument("--HWE", help="Apply HWE p-value cutoff QC", type=float, default=1e-100)
     parser.add_argument("--GQ", help="Apply minimun genotype score QC", type=int, default=20)
     args = parser.parse_args()
-
+ 
     # Set up paths
     if args.phenotype.endswith(".csv"):
         ptcovar_path = args.phenotype

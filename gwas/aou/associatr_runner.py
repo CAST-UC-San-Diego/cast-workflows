@@ -42,7 +42,7 @@ class AssociaTRRunner:
         same_samples = False
         sample_list = None
         non_major_cutoff = 20
-        beagle_dosages = False
+        beagle_dosages = True
         plotting_phenotype = None
         paired_genotype_plot = False
         plot_genotype_residuals = False
