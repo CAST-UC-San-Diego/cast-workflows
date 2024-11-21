@@ -54,6 +54,9 @@ Optional arguments:
 * `--MAF`: Apply minor allele frequency QC. Default=0.01
 * `--HWE`: Apply HWE p-value cutoff QC. Default=1e-15
 * `--GQ`: Apply minimun genotype score QC. Default=20
+* `--logistic`: Apply logistic regression, default is linear regression
+* `--test`: Select test for logistic regression: wald,lrt,score,firth
+
 
 
 ## Important file locations:

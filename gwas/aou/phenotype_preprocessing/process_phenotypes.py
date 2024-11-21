@@ -64,6 +64,9 @@ for index, row in ptdata.iterrows():
            	outlier_sd=row["outlier_sd"])
     if str(row["drugcovars"]) != "nan":
         cmd += " --drugexposure-covariate-concept-ids {drug}".format(drug=row["drugcovars"])
+    if str(row["ppi"]) == "ppi":
+        cmd += " --ppi"
+
     outfile = row["phenotype"]+"_phenocovar.csv"
     gcsfile = os.path.join(os.environ["WORKSPACE_BUCKET"], "phenotypes", outfile)
     RunCmd(cmd)

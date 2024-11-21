@@ -1,31 +1,76 @@
 phenotype,concept_id,units,sd,min,max,drugcovars,phenotype_file,numsamples,md5sum
-ALT,37047736,blood,5,0,250,nan,ALT_phenocovar.csv,122655,9a8dc5936e4e8471b733bdad0ba6d97b
-platelet_count,3024929,"thousand per microliter,thousand per cubic millimeter,billion per liter,no value",5,0,1000,nan,platelet_count_phenocovar.csv,92099,b3b9278bde0ab7600bce059fb7305041
-alkaline_phosphatase,3035995,"unit per liter,international unit per liter",5,0,250,nan,alkaline_phosphatase_phenocovar.csv,94582,15d1b7bdd0f6678afba2144ecab37e4d
-aspartate_aminotransferase,3013721,"unit per liter,international unit per liter",5,0,90,nan,aspartate_aminotransferase_phenocovar.csv,94002,5c779a84b17a0a0e31cf6dd3847789e8
-calcium,3006906,"milligram per deciliter",5,0,30,nan,calcium_phenocovar.csv,129460,37a98d228e87762dd7cb05f28684df5e
-cholesterol,3027114,"milligram per deciliter",5,0,1000,nan,cholesterol_phenocovar.csv,92112,ee501be5006f55b74faaf68cf29dc1df
-creatinine,3016723,"milligram per deciliter",5,0,10,nan,creatinine_phenocovar.csv,129173,4a0da78e4885adf4d37bf577ef517f11
-eosinophil_percent,3010457,"percent,no value",5,0,100,nan,eosinophil_percent_phenocovar.csv,87594,f2ce34706e12426612afd566c7e3a86e
-glucose,3004501,"milligram per deciliter",5,0,500,nan,glucose_phenocovar.csv,128355,5e7d9e6528da33f0dfa70d1dc65275ff
-glycated_haemoglobin,3004410,"percent",5,0,50,nan,glycated_haemoglobin_phenocovar.csv,57982,e9b84e34da7046f21582b72f3bde0da4
-haematocrit,3023314,"percent",5,0,100,nan,haematocrit_phenocovar.csv,116543,7b99c8759f8a67d777b8a048bef65457
-hdl_cholesterol,3007070,"milligram per deciliter",5,0,200,nan,hdl_cholesterol_phenocovar.csv,90890,7f361148f35cfd53625c357c500870af
-ldl_cholesterol,3028288,"milligram per deciliter",5,0,500,21601855:statin,ldl_cholesterol_phenocovar.csv,64435,811a6ac25dc182b3e80f9f2b3e27d473
-lymphocyte_percent,3037511,"percent,no value",5,0,100,nan,lymphocyte_percent_phenocovar.csv,96593,c648bb1160c575cb650b9d74be9e255c
-egfr,46236952,"milliliter per minute per 1.73 square meter,milliliter per minute",5,0,200,nan,egfr_phenocovar.csv,34290,95bb0ec077b5c473361473121204eb59
-mean_platelet_volume,3043111,"femtoliter",5,0,50,nan,mean_platelet_volume_phenocovar.csv,83636,f5581afa7e7abd21b5f7903ecfeaba6a
-neutrophil_count,3013650,"thousand per microliter",5,0,50,nan,neutrophil_count_phenocovar.csv,49455,9ab39fc582be6a1193228505349c7a25
-neutrophil_percent,3008342,"percent,no value",5,0,150,nan,neutrophil_percent_phenocovar.csv,77788,17eeb5fd31b2e10722e8b34696a9377e
-phosphate,3011904,"milligram per deciliter",5,0,10,nan,phosphate_phenocovar.csv,50151,a7e07b418004f169c98af8a8b4e4285c
-red_blood_cell_count,3020416,"million per microliter,Meter per microliter,million per cubic millimeter,trillion per liter,Meter per cubic millimeter,thousand per cubic millimeter",5,0,20,nan,red_blood_cell_count_phenocovar.csv,95407,b3c6144f427e5789d917b852e8350ee3
-mean_corpuscular_hemoglobin,3012030,"picogram,picogram per cell,no value",5,0,100,nan,mean_corpuscular_hemoglobin_phenocovar.csv,123855,2c1dc12f4c483ef76e66dc5944b95355
-mean_corpuscular_volume,3023599,"femtoliter,u/m3,no value",5,0,200,nan,mean_corpuscular_volume_phenocovar.csv,122185,5b0d2e63a7db2f5e6a9a5b39e774bf8f
-red_blood_cell_distribution_width,3019897,"percent,no value",5,0,100,nan,red_blood_cell_distribution_width_phenocovar.csv,119064,c5c927c95dc4401f259f9da65d34f762
-protein,3020630,"gram per deciliter,gram per deciliter calculated,no value",5,0,20,nan,protein_phenocovar.csv,124114,997e92c53ffb409136ca94c238753c0e
-triglycerides,3022192,"milligram per deciliter",5,0,500,nan,triglycerides_phenocovar.csv,93104,ae1b7795aa8d58476817163de402cd87
-white_blood_cell_count,3000905,"thousand per microliter,thousand per cubic millimeter",5,0,100,nan,white_blood_cell_count_phenocovar.csv,89590,46217bc1c98be0b6046c82944a735c74
-total_bilirubin,3024128,"milligram per deciliter",5,0,3,nan,total_bilirubin_phenocovar.csv,116377,e018cf20b36aa09ae3a9b847f62ddb89
-urea,3013682,"milligram per deciliter",5,0,100,nan,urea_phenocovar.csv,129100,0bc00cbc6e906bd45f802938b3263f1b
-albumin,3024561,"gram per liter",5,0,100,nan,albumin_phenocovar.csv,110128,280b79cd33f91666a602446eb49a603c
-hemoglobin,3000963,"gram per liter",5,0,250,nan,hemoglobin_phenocovar.csv,128446,00dd06b1f193ef69dd3023a62e31f6d4
+ALT,3006923,blood,5,0,250,nan,ALT_phenocovar.csv,111582,6c91b13f6a368bb70493f8fecc70a62d
+platelet_count,3024929,"thousand per microliter,thousand per cubic millimeter,no value",5,0,1000,nan,platelet_count_phenocovar.csv,92099,d7a9c0b07efe2d3d96c1fca0be611fdc
+alkaline_phosphatase,3035995,"unit per liter,international unit per liter",5,0,250,nan,alkaline_phosphatase_phenocovar.csv,94582,4d5f2af06460c701fe3acad6378a3b83
+aspartate_aminotransferase,3013721,"unit per liter,international unit per liter",5,0,90,nan,aspartate_aminotransferase_phenocovar.csv,94002,631c286b2052a7be7130417fa7bca5a6
+calcium,3006906,"milligram per deciliter",5,0,30,nan,calcium_phenocovar.csv,129460,8bb915880c3719fdf8d3d475f179a6e6
+cholesterol,3027114,"milligram per deciliter,no value",5,0,1000,nan,cholesterol_phenocovar.csv,94618,a6b279600dc5ae7f4412840e965c00fc
+creatinine,3016723,"milligram per deciliter",5,0,10,nan,creatinine_phenocovar.csv,129173,ae17e29544e75f91f2ad1dc2b8661dc8
+eosinophil_percent,"3010457,3006504","percent,no value",5,0,100,nan,eosinophil_percent_phenocovar.csv,104288,cfc2ba0136359a3a8b605637d53d9d19
+glucose,3004501,"milligram per deciliter",5,0,500,nan,glucose_phenocovar.csv,128355,072199fcae06ba180377f3a2915ad46b
+glycated_haemoglobin,3004410,percent,5,0,50,nan,glycated_haemoglobin_phenocovar.csv,57982,745d86a4209a67c23ef94bd2911b8c52
+haematocrit,"3023314,3009542",percent,5,0,100,nan,haematocrit_phenocovar.csv,129340,3882727daa9b9c266fa12ad327fffb80
+hdl_cholesterol,3007070,"milligram per deciliter",5,0,200,nan,hdl_cholesterol_phenocovar.csv,90890,5276f60139d1a1473fc70ec0d5a27d84
+ldl_cholesterol,3028288,"milligram per deciliter,milligram per deciliter calculated,no value",5,0,500,21601855:statin,ldl_cholesterol_phenocovar.csv,68562,9be847799070375bbea9f91edcb8fcad
+lymphocyte_percent,3037511,"percent,no value,percent of white blood cells",5,0,100,nan,lymphocyte_percent_phenocovar.csv,98486,c9b92e49a98867ef94508341eb7a2b58
+egfr,46236952,"milliliter per minute per 1.73 square meter,milliliter per minute",5,0,200,nan,egfr_phenocovar.csv,34290,041f5442019e32d26056e83e3ce4e7e6
+mean_platelet_volume,3043111,femtoliter,5,0,50,nan,mean_platelet_volume_phenocovar.csv,83636,74fe989359f206606fdb1f5fbe7b485c
+neutrophil_percent,3008342,"percent,no value,percent of white blood cells",5,0,150,nan,neutrophil_percent_phenocovar.csv,79683,9172cbefcd8f14633ffbfb8f0020d1c6
+phosphate,3011904,milligram per deciliter,5,0,15,nan,phosphate_phenocovar.csv,50152,9df9211a77cdd066d61a12b4b6ffb900
+red_blood_cell_count,3020416,"million per microliter,Meter per microliter,million per cubic millimeter,trillion per liter,Meter per cubic millimeter,thousand per cubic millimeter",5,0,20,nan,red_blood_cell_count_phenocovar.csv,95407,07646ae2715368c2c3fd52828b9f2614
+mean_corpuscular_hemoglobin,3012030,"picogram,picogram per cell,no value",5,0,100,nan,mean_corpuscular_hemoglobin_phenocovar.csv,123855,07304fb259e44f90e13fdaa40e0d2d87
+mean_corpuscular_volume,3023599,"femtoliter,u/m3,no value",5,0,200,nan,mean_corpuscular_volume_phenocovar.csv,122185,5645e77df69f1ecc83939e521a91d2c8
+red_blood_cell_distribution_width,3019897,"percent,no value",5,0,100,nan,red_blood_cell_distribution_width_phenocovar.csv,119064,72204f54e126458fe3986406da65fb81
+protein,3020630,"gram per deciliter,gram per deciliter calculated,no value",5,0,20,nan,protein_phenocovar.csv,124114,12e7995226f81b31490f1f1123d38574
+triglycerides,3022192,"milligram per deciliter",5,0,500,nan,triglycerides_phenocovar.csv,93104,a9b547eb9912ff0b79f7587d2730c2e5
+total_bilirubin,3024128,milligram per deciliter,5,0,5,nan,total_bilirubin_phenocovar.csv,116458,0adb1321a61f14acccd721a38e3c41a5
+urea,3013682,milligram per deciliter,5,0,100,nan,urea_phenocovar.csv,129100,afa9e000da322eb73e2ed3401db3cad0
+albumin,3024561,gram per liter,5,0,100,nan,albumin_phenocovar.csv,110128,59d9e2647429347ec03fe05c3fad0512
+hemoglobin,3000963,gram per liter,5,0,250,nan,hemoglobin_phenocovar.csv,128446,c00f8080b2d1be73555ccd0ccbae0a65
+mean_corpuscular_haemoglobin_concentration,3009744,"gram per deciliter,gram per deciliter calculated",5,0,70,nan,mean_corpuscular_haemoglobin_concentration_phenocovar.csv,128562,b84a3f0b661ade78a1fcdb9f6e522c1d
+urate,3037556,milligram per deciliter,5,0,50,nan,urate_phenocovar.csv,24931,6973b1a28283555fbb537df30dd621ce
+sodium,3019550,"millimole per liter,no value",5,0,500,nan,sodium_phenocovar.csv,134002,ccb0b6358e9158ac57ee5201326f04a8
+chloride,3014576,"millimole per liter,no value",5,0,300,nan,chloride_phenocovar.csv,132898,e4c2af7b18629fc3936fb76b9e21a8b1
+urea_nitrogen,3013682,"milligram per deciliter,no value,No unit",5,0,200,nan,urea_nitrogen_phenocovar.csv,130343,5db59bb6b882eff9969c2058de38c71c
+potassium,3023103,millimole per liter,5,0,50,nan,potassium_phenocovar.csv,131628,3cb17874dd49e7fe5f2654f75ab8b228
+heart_rate,3027018,"% REF,per minute,minute,counts per minute,heartbeat",5,0,300,nan,heart_rate_phenocovar.csv,223714,dc67edb024190538e4956a52b9631e91
+body_temperature,3020891,"degree Celsius,degrees C,no value",5,30,50,nan,body_temperature_phenocovar.csv,90143,826558275876df2038d006cdf08f70af
+systolic_blood_pressure,3004249,millimeter mercury column,5,0,250,nan,systolic_blood_pressure_phenocovar.csv,223516,c8f15e56ab4a900869eb6d140276e871
+diastolic_blood_pressure,3012888,millimeter mercury column,5,0,200,nan,diastolic_blood_pressure_phenocovar.csv,223512,116bfd30b248a45e5bb3ef100659a070
+carbon_dioxide,3015632,"millimole per liter,milliequivalent per liter,no value",5,0,100,nan,carbon_dioxide_phenocovar.csv,113198,70d820ac1c7bbc86088a838ae34208b4
+respiratory_rate,3024171,"counts per minute,per minute",5,0,100,nan,respiratory_rate_phenocovar.csv,55321,0cc43fce3457fe0a575f6f0046a1140b
+weight,903121,kilogram,5,0,300,nan,weight_phenocovar.csv,219614,78c1331af1d880a88a1642c7f92b59be
+height,903133,centimeter,5,0,250,nan,height_phenocovar.csv,220246,46060475ad61e6eeb097408652ecb01d
+basophils_percent,3013869,"percent,no value,percent of white blood cells",5,0,20,nan,basophils_percent_phenocovar.csv,84664,37a380607f688d86bff9b0bd08fa2c74
+monocytes_percent,"3011948,3019069","percent,percent of white blood cells",5,0,50,nan,monocytes_percent_phenocovar.csv,105293,2afc23a7fb682c697c8f0ac4e9bf7835
+urine_pH,3022621,pH,5,0,12,nan,urine_pH_phenocovar.csv,7264,7e75843c21dba6bd26255b148be10175
+anion_gap,3045716,"millimole per liter,milliequivalent per liter",5,0,100,nan,anion_gap_phenocovar.csv,50830,62533c1170a3c9a7d67312bcf0046386
+thyrotropin,3009201,"micro-international unit per milliliter,milliunit per liter,milli-international unit per liter",5,0,20,nan,thyrotropin_phenocovar.csv,21601,885315f9870a1351416dadd08faa5c58
+hemoglobin_A1_percent,3004410,percent,5,0,100,nan,hemoglobin_A1_percent_phenocovar.csv,57986,532ab7e005e468df7e3aa65ee699ac36
+INR,3022217,ratio,5,0,50,nan,INR_phenocovar.csv,9055,1f72da7d6b6ef0ab24230585ab410c3b
+prothrombin_time,3034426,second,5,0,100,nan,prothrombin_time_phenocovar.csv,45044,5b8bbdf47121ebc16297ca152ccc59b9
+magnesium,3001420,milligram per deciliter,5,0,20,nan,magnesium_phenocovar.csv,53641,d78952c1779462f267f84581729a7ad8
+cholesterol_total_in_cholesterol_HDL,3011163,ratio,5,0,20,nan,cholesterol_total_in_cholesterol_HDL_phenocovar.csv,17075,c6d52e181e0c57409b7b8dabe60b6d59
+cholesterol_nonHDL,3044491,"milligram per deciliter,milligram per deciliter calculated,no value",5,0,500,nan,cholesterol_nonHDL_phenocovar.csv,48094,a761d7bafdf418966a7556a3604df7da
+bilirubin_direct,3027597,milligram per deciliter,5,0,5,nan,bilirubin_direct_phenocovar.csv,50081,9b47f152effb07c6cd6234cf555241ac
+bilirubin_indirect,3007359,"milligram per deciliter,milligram per deciliter calculated",5,0,10,nan,bilirubin_indirect_phenocovar.csv,33829,fdd2eeddf8e7a48098d5dac4bb1ece06
+erythrocytes_urine,3035124,per high power field,5,0,50,nan,erythrocytes_urine_phenocovar.csv,15674,b07b2d66a9bb22ae8437bbbaf4488e57
+leukocytes_urine,3035583,per high power field,5,0,50,nan,leukocytes_urine_phenocovar.csv,16235,8ce251350b07e8c5d7cd559725154365
+epithelial_cells_urine,3001008,per high power field,5,0,50,nan,epithelial_cells_urine_phenocovar.csv,15177,1241cacffcc0515272de6a1fc250e061
+aPTT,3018677,second,5,0,200,nan,aPTT_phenocovar.csv,34155,622bc96c84c189adf94f680b736badef
+lipase,3004905,unit per liter,5,0,250,nan,lipase_phenocovar.csv,21445,a209055f3e0a6599af57e407a0fe7147
+vitamin_B12,3000593,picogram per milliliter,5,0,2000,nan,vitamin_B12_phenocovar.csv,34323,dd09abb9189c9cc0d2c04dccc6182ab4
+urea_nitrogen_in_creatinine,3018311,"milligram per milligram of creatinine,ratio,calculated",5,0,100,nan,urea_nitrogen_in_creatinine_phenocovar.csv,19922,2cafabec8a7f034cee61e4f7e9e095e3
+25-hydroxyvitamin_D3,3020149,"nanogram per milliliter,nanogram per milliliter and hour",5,0,200,nan,25-hydroxyvitamin_D3_phenocovar.csv,37863,cd0abc4af91839e746507e510d6e22b4
+iron,3002400,microgram per deciliter,5,0,500,nan,iron_phenocovar.csv,28094,005577ec3513c2c9428ef8149a196099
+ferritin,3001122,"nanogram per milliliter,microgram per liter",5,0,1000,nan,ferritin_phenocovar.csv,35918,9cc52a56ab8ba5263b20e5e6bcd3abd9
+glucose_mean_value,3005131,"milligram per deciliter,milligram per deciliter calculated",5,0,1000,nan,glucose_mean_value_phenocovar.csv,28257,176a453d3528a252bb9999226c1ee8e2
+thyroxine,3008598,nanogram per deciliter,5,0,20,nan,thyroxine_phenocovar.csv,32556,562b5ad989884921f0b9deff1396a972
+neutrophil_count,3013650,"thousand per microliter,thousand per cubic millimeter,billion per liter",5,0,50,nan,neutrophil_count_phenocovar.csv,61052,662315cd8c4707f7e21765d27e845ecb
+white_blood_cell_count,3000905,"thousand per microliter,thousand per cubic millimeter,billion per liter",5,0,100,nan,white_blood_cell_count_phenocovar.csv,89590,1ad5576c74d1896ad962da83781e2465
+eosinophil_count,3028615,"thousand per microliter,thousand per cubic millimeter,billion per liter,nl",5,0,3,nan,eosinophil_count_phenocovar.csv,54570,eaac6724f9768057822ec32cf89f0b49
+lymphocyte_count,3004327,"thousand per microliter,thousand per cubic millimeter,billion per liter",5,0,25,nan,lymphocyte_count_phenocovar.csv,59270,9339eb093a08de80f7789fc8cdc2a6a8
+monocytes_count,3033575,"thousand per microliter,thousand per cubic millimeter,billion per liter",5,0,10,nan,monocytes_count_phenocovar.csv,54750,54365d1b62a7345a58ee809436bbe283
+basophils_count,3013429,"thousand per microliter,thousand per cubic millimeter,billion per liter",5,0,5,nan,basophils_count_phenocovar.csv,40716,3403eee0da9a42a0c92032e65fd21489
+nucleated_erythrocytes,3007238,"thousand per microliter,billion per liter",5,0,10,nan,nucleated_erythrocytes_phenocovar.csv,1293,7bd52d48f2481b157dbbf97a804d8f3a
+immature_granulocytes,3040168,"thousand per microliter,billion per liter,thousand per cubic millimeter",5,0,5,nan,immature_granulocytes_phenocovar.csv,10844,fdd12ffadd8efab9e18f70f1cc569c5b

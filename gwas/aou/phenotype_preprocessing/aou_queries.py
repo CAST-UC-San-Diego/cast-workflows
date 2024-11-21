@@ -4,6 +4,9 @@ SQL queries for AoU phenotypes
 
 import os
 
+WORKSPACE_BUCKET = os.getenv('WORKSPACE_BUCKET')
+WORKSPACE_CDR = os.getenv('WORKSPACE_CDR')
+
 ########## Phenotype-specific info ###########
 BLOOD_UNITS = ["IU/L", "No matching concept", "international unit per liter", \
             "no value", "unit per liter"]

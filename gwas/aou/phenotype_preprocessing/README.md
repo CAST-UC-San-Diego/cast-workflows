@@ -24,7 +24,7 @@ Usage example:
 Required arguments: 
 
 * `--phenotype <STR>`: phenotype ID to use to name the output file
-* `--concept-id <INT>`: must be obtained from the AoU workbench data browser (TODO: add instructions)
+* `--concept-id <INT>`: must be obtained from the AoU workbench data browser, comma-separated list of concept ids to allow(TODO: add instructions)
 * `--units <STR>`: comma-separated list of units to allow. Shortcut `--units blood` allows units: "IU/L", "No matching concept", "international unit per liter", "no value", "unit per liter". TODO: Might change this based on units for other phenotypes
 * `--range <INT,INT>`: Minimum and maximum accepted values for the phenotype
 

@@ -16,8 +16,13 @@ import argparse
 import numpy as np
 import os
 import pandas as pd
+import scipy.stats
 import trtools.utils.tr_harmonizer as trh
 import trtools.utils.utils as utils
+
+from scipy.stats import sem
+import scipy.stats as st 
+
 from utils import MSG, ERROR
 
 SAMPLEFILE = os.path.join(os.environ["WORKSPACE_BUCKET"], "samples", \
@@ -26,6 +31,7 @@ SAMPLEFILE = os.path.join(os.environ["WORKSPACE_BUCKET"], "samples", \
 def GetPTCovarPath(phenotype):
     return os.path.join(os.getenv('WORKSPACE_BUCKET'), \
         "phenotypes", "%s_phenocovar.csv"%phenotype)
+
 
 def main():
     parser = argparse.ArgumentParser(__doc__)
@@ -64,8 +70,19 @@ def main():
 
     # Merge phenotype and TR dosages
     df = pd.merge(data, trdf, on=["person_id"])
-    pltdata = df.groupby("tr_dosage", as_index=False).agg(phenotype_mean=("phenotype", np.mean), n=("phenotype", len))
+    df.to_csv('plot.csv',index=False,sep=',')
+    pltdata = df.groupby("tr_dosage", as_index=False).agg(phenotype_mean=("phenotype", np.mean), n=("phenotype", len),sem=("phenotype", sem))
     pltdata = pltdata[pltdata["n"]>args.min_samples_per_dosage]
+    pltdata.to_csv('CI.csv',index=False,sep=',')
+    # Compute CI
+    pltdata[['CI_lower','CI_upper']] = pltdata.apply(lambda x:st.norm.interval(alpha=0.95, loc=x['phenotype_mean'], scale=x['sem']),axis=1).tolist()
+    pltdata = pltdata[pltdata["n"]>args.min_samples_per_dosage]
+    #print(pltdata)
+    #pltdata.to_csv('CI.csv',index=False,sep=',')
+
+
+
+
 
 	# Plot - TODO
     fig = plt.figure()

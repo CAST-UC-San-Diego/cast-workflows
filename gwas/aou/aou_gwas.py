@@ -5,6 +5,8 @@ Run GWAS on All of Us
 
 Example:
 ./aou_gwas.py --phenotype ALT --num-pcs 10 --region chr11:119206339-119308149
+./aou_gwas.py --phenotype ${WORKSPACE_BUCKET}/data/phenotypes/v7/type2_diabetes_phenotypes.csv --num-pcs 10 --region chr10:112948590-113048590 --logistic --test wald --plot
+
 """
 
 import argparse
@@ -110,6 +112,8 @@ def main():
     parser.add_argument("--MAF", help="Apply minor allele frequency QC", type=float, default=0.01)
     parser.add_argument("--HWE", help="Apply HWE p-value cutoff QC", type=float, default=1e-100)
     parser.add_argument("--GQ", help="Apply minimun genotype score QC", type=int, default=20)
+    parser.add_argument("--logistic", help="Apply logistic regression",action="store_true", default=False)
+    parser.add_argument("--test", help="Select test for logistic regression: wald,lrt,score,firth. Default: False", type=str)
     args = parser.parse_args()
 
     # Set up paths
@@ -129,6 +133,11 @@ def main():
         ERROR("Must specify --tr-vcf for associaTR")
     if args.norm_by_sex and args.norm is None:
         ERROR("Must specify --norm if using --norm-by-sex")
+    if args.logistic and args.method == "associaTR":
+        ERROR("associaTR run on linear regression only")
+    if args.logistic and args.test is None:
+        ERROR("Must specify --test if using --logistic")
+    
 
     # Get covarlist
     pcols = ["PC_%s"%i for i in range(1, args.num_pcs+1)]
@@ -182,10 +191,11 @@ def main():
     # Set up GWAS method
     if args.method == "hail":
         from hail_runner import HailRunner
-        runner = HailRunner(data, region=args.region, covars=covars, sample_call_rate=args.sample_call_rate, variant_call_rate=args.variant_call_rate, MAF=args.MAF, HWE=args.HWE, GQ=args.GQ)
+        runner = HailRunner(data, region=args.region, covars=covars, sample_call_rate=args.sample_call_rate, variant_call_rate=args.variant_call_rate, MAF=args.MAF, HWE=args.HWE, GQ=args.GQ, logistic=args.logistic, test=args.test)
     elif args.method == "associaTR":
         from associatr_runner import AssociaTRRunner
         runner = AssociaTRRunner(data, args.tr_vcf, region=args.region, covars=covars)
+                 
     else:
         ERROR("GWAS method %s not implemented" % args.method)
 

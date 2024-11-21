@@ -20,6 +20,8 @@ import sys
 
 SAMPLEFILE = os.path.join(os.environ["WORKSPACE_BUCKET"], "samples", \
     "passing_samples_v7.csv")
+WORKSPACE_BUCKET = os.getenv('WORKSPACE_BUCKET')
+WORKSPACE_CDR = os.getenv('WORKSPACE_CDR')
 
 def MSG(msg_str):
     """
